@@ -4,7 +4,7 @@ var verseRefElem = document.getElementById('votd-ref');
 var verseRefUrlElem = document.getElementById('votd-ref-link');
 var dayOfYear = moment().dayOfYear();
 var devToken = 'edH9JzxsqEv_Pt83GjywUJPYdvw';
-var randomDay = Math.floor(Math.random() * 365);
+var randomDay = Math.floor(Math.random() * 365) + 1;
 var versionId = 1; // this is the id for the KJV
 
 function getVerse() {
