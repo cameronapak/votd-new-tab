@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Verse of the Day - new tab</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="Description" content="Authors: Cameron Pak, Allen George, Description: A chrome new tab extension that beautifully displays the YouVersion Bible verse of the day.">
+	<link type="text/css" rel="stylesheet" href="override.css">
+</head>
+<body>
+	<!-- verse of the day -->
+	<div id='votd'>
+		<h1 id="votd-text">Loading...</h1>
+		<a id="votd-ref-link" href="https://bible.com" target="_blank" rel="noopener">
+			<div id="votd-ref">Loading...</div>
+		</a>
+	</div>
+
+	<!-- credits -->
+	<div id='credit'>Credits:
+		<a href="https://youversion.com/" target="_blank" rel="noopener">YouVersion</a>,
+		<a href="https://unsplash.com/collections/162213/long-exposure" target="_blank" rel="noopener"> Unsplash</a>
+	</div>
+
+	<script type="text/javascript" src="../../js/moment.min.js" defer></script>
+	<script type="text/javascript" src="verseService.js" defer></script>
+	<script type="text/javascript" src="override.js" defer></script>
+</body>
+</html>

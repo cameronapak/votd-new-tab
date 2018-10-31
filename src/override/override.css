@@ -1,0 +1,105 @@
+h1 {
+ font-size: 32px
+}
+
+body {
+ width: 100%;
+ margin: auto;
+ background-color: #111;
+ background-position: 50%;
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-image: url('https://source.unsplash.com/collection/162213/1600x900/daily');
+ transition: background-image 2s;
+ -webkit-transition: background-image 2s
+}
+
+@media only screen and (min-width: 768px) {
+ body {
+ width: 600px
+ }
+}
+
+@keyframes verseAnimation {
+ 0%{
+ opacity: 0.0
+ }
+ 100%{
+ opacity: 1.0
+ }
+}
+
+#votd {
+ display: flex;
+ flex-direction: column;
+ align-items: left;
+ justify-content: center;
+ height: 100vh;
+ margin: 0 1rem;
+ text-align: left;
+ animation: verseAnimation 3s ease-in
+}
+
+#votd-text {
+ font-family: Avenir, sans-serif;
+ color: #FFFFFF;
+ text-shadow: 1px 1px 10px #404041;
+ line-height: 1.6;
+}
+
+#votd-ref {
+ opacity: 0.8;
+ margin: 0;
+ color: #404041;
+ background-color: #FFFFFF;
+ display: block;
+ padding: 0.25rem 0.5rem;
+ border-radius: 999px;
+ width: max-content;
+}
+
+
+#votd-ref:hover {
+ opacity: 1.0
+}
+
+#votd-ref-link {
+ text-decoration: none;
+ color: #000000;
+ width: max-content
+}
+
+#credit {
+  border-radius: 999px;
+  bottom: 16px;
+  color: #FFF;
+  position: absolute;
+  left: 0;
+  opacity: 0.5;
+  right: 0;
+  margin: auto;
+  background-color: transparent;
+  padding: 0.25rem 0.5rem;
+  text-align: center;
+  transition: all 0.5s ease;
+  width: max-content;
+  text-shadow: 1px 1px 10px #404041;
+}
+
+#credit:hover {
+  cursor: default;
+  text-shadow: none;
+  opacity: 1;
+  color: #404041;
+  background-color: #FFF
+}
+
+#credit a {
+  text-decoration: none;
+  color: inherit
+}
+
+#credit a:hover {
+  display: inline-block;
+  color: #00a8d8
+}

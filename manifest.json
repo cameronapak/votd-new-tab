@@ -1,0 +1,11 @@
+{
+  "name": "Verse of the Day - New Tab",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "This project is a Google Chrome extension that overrides each new tab with a beautifully displayed bible verse of the day, using YouVersion's API.",
+  "homepage_url": "http://bible.com",
+  "default_locale": "en",
+  "chrome_url_overrides": {
+    "newtab": "src/override/override.html"
+  }
+}
