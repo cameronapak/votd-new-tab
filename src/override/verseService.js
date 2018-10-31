@@ -5,11 +5,11 @@ var verseRefUrlElem = document.getElementById('votd-ref-link');
 var dayOfYear = moment().dayOfYear();
 var devToken = 'edH9JzxsqEv_Pt83GjywUJPYdvw';
 var randomDay = Math.floor(Math.random() * 365);
-var version = 'KJV';
+var versionId = 1; // this is the id for the KJV
 
 function getVerse() {
   // var Url = `https://developers.youversionapi.com/1.0/verse_of_the_day/${dayOfYear}?version=ASV`;
-  var Url = `https://developers.youversionapi.com/1.0/verse_of_the_day/${randomDay}?version=${version}`;
+  var Url = `https://developers.youversionapi.com/1.0/verse_of_the_day/${randomDay}?version_id=${versionId}`;
   var otherParam = {
     headers: {
       "Accept": "application/json",
